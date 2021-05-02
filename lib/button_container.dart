@@ -15,19 +15,19 @@ class ButtonContainer extends StatelessWidget {
       child: Column(
         children: [
           CustomButton(
-            label: '+90 543 975 51 86',
+            label: '+90 533 533 33 33',
             icon: Icon(Icons.phone),
-            onPressed: () => launch("tel://05439755186"),
+            onPressed: () => launch("tel://053335333333"),
           ),
           CustomButton(
-            label: 'hazalydz534@gmail.com',
+            label: 'faikyesilyaprak@outlook.com',
             icon: Icon(Icons.email),
-            onPressed: () => launch('mailto:hazalydz534@gmail.com'),
+            onPressed: () => launch('mailto:faikyesilyaprak@outlook.com'),
           ),
           CustomButton(
-            label: 'Instagram/hhazalyldz',
+            label: 'Instagram/bythewayimfaik',
             icon: Icon(Icons.send_rounded),
-            onPressed: () => launch('https://www.instagram.com/hhazalyldz'),
+            onPressed: () => launch('https://www.instagram.com/bythewayimfaik'),
           ),
         ],
       ),

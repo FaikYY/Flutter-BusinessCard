@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
 final double container_width = 300;
-final String img_url =
-    'https://media-exp1.licdn.com/dms/image/C4D03AQE9cSQlw6CMiQ/profile-displayphoto-shrink_200_200/0/1616763483914?e=1625702400&v=beta&t=DBVqXh1tgPW1m6XcbIe6MkFg8029BgQA8oaoip0edbw';
+final String img_url = 'https://avatars.githubusercontent.com/u/63950761?v=4';
 
 class ProfileContainer extends StatelessWidget {
   @override
@@ -15,7 +14,7 @@ class ProfileContainer extends StatelessWidget {
           ProfileIcon(),
           SizedBox(height: 20),
           Text(
-            "Hazal Yıldız",
+            "Faik YESILYAPRAK",
             style: TextStyle(
               color: Colors.white,
               fontSize: 24,
