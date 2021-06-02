@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 final double container_width = 300;
-final String img_url = 'https://avatars.githubusercontent.com/u/63950761?v=4';
+final String img_path = 'assets/images/me.jpg';
 
 class ProfileContainer extends StatelessWidget {
   @override
@@ -50,7 +50,7 @@ class ProfileIcon extends StatelessWidget {
       decoration: BoxDecoration(
         shape: BoxShape.circle,
         image: DecorationImage(
-          image: NetworkImage(img_url),
+          image: AssetImage(img_path),
         ),
       ),
     );
