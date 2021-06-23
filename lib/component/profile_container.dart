@@ -1,20 +1,19 @@
 import 'package:flutter/material.dart';
+import '../constant.dart';
 
-final double container_width = 300;
 final String img_path = 'assets/images/me.jpg';
 
 class ProfileContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      //color: Colors.red,
       width: container_width,
       child: Column(
         children: [
           ProfileIcon(),
           SizedBox(height: 20),
           Text(
-            "Faik YESILYAPRAK",
+            "Faik Yesilyaprak",
             style: TextStyle(
               color: Colors.white,
               fontSize: 24,
@@ -23,12 +22,12 @@ class ProfileContainer extends StatelessWidget {
           ),
           SizedBox(height: 10),
           Text(
-            "Flutter Developer",
+            "Jr. Flutter Developer",
             style: TextStyle(
               color: Colors.white,
               fontSize: 24,
-              letterSpacing: 5,
-              fontWeight: FontWeight.bold,
+              letterSpacing: 3,
+              fontWeight: FontWeight.w700,
             ),
           ),
         ],
@@ -38,15 +37,11 @@ class ProfileContainer extends StatelessWidget {
 }
 
 class ProfileIcon extends StatelessWidget {
-  const ProfileIcon({
-    Key key,
-  }) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 80,
-      height: 80,
+      width: 120,
+      height: 120,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
         image: DecorationImage(

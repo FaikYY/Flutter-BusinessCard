@@ -4,7 +4,7 @@ class CustomButton extends StatelessWidget {
   const CustomButton({this.label, this.icon, this.onPressed});
 
   final String label;
-  final Icon icon;
+  final Widget icon;
   final VoidCallback onPressed;
 
   @override

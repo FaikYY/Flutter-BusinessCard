@@ -1,17 +1,14 @@
 import 'package:flutter/material.dart';
-import 'custom_button.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import '../constant.dart';
+import '../widget/custom_button.dart';
 import 'package:url_launcher/url_launcher.dart';
-
-final double container_width = 300;
-final double container_height = 300;
 
 class ButtonContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      //color: Colors.orange,
       width: container_width,
-      height: container_height,
       child: Column(
         children: [
           CustomButton(
@@ -25,9 +22,20 @@ class ButtonContainer extends StatelessWidget {
             onPressed: () => launch('mailto:faikyesilyaprak@outlook.com'),
           ),
           CustomButton(
-            label: 'Instagram/bythewayimfaik',
-            icon: Icon(Icons.send_rounded),
+            label: 'bythewayimfaik',
+            icon: FaIcon(FontAwesomeIcons.instagram),
             onPressed: () => launch('https://www.instagram.com/bythewayimfaik'),
+          ),
+          CustomButton(
+            label: 'FaikYY',
+            icon: FaIcon(FontAwesomeIcons.github),
+            onPressed: () => launch('https://github.com/FaikYY'),
+          ),
+          CustomButton(
+            label: 'Faik Yesilyaprak',
+            icon: FaIcon(FontAwesomeIcons.linkedin),
+            onPressed: () =>
+                launch('https://www.linkedin.com/in/faik-yesilyaprak/'),
           ),
         ],
       ),
